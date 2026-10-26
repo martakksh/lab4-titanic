@@ -1,16 +1,13 @@
 {
   "name": "lab4-titanic",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js -i titanic.json -h 127.0.0.1 -p 3000",
+    "dev": "node --watch main.js -i titanic.json -h 127.0.0.1 -p 3000"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "commander": "^15.0.0"
+    "commander": "^12.1.0"
   }
 }
