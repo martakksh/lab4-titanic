@@ -106,4 +106,4 @@ fs.stat(options.input, (err, stats) => {
   server.listen(options.port, options.host, () => {
     console.log(`Сервер успішно запущено на http://${options.host}:${options.port}`);
   });
-});
+});// Варіант 6: обробка та фільтрація даних пасажирів
