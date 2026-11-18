@@ -2,4 +2,7 @@ node main.js -i titanic.json -h localhost -p 3000
 curl "http://localhost:3000/?survived=true"
 curl "http://localhost:3000/?survived=true&age=true"
 curl "http://localhost:3000/"
-curl -i "http://localhost:3000/wrong-route"
+curl -i "http://localhost:3000/wrong-route"        404
+node main.js -i not-found-file.json -h localhost -p 3000   500
+curl -i "http://localhost:3000/?survived=maybe"     400
+node --inspect main.js -i titanic.json -h localhost -p 3000
